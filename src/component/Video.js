@@ -28,7 +28,12 @@ function Video({ url, channel, description, song, likes, messages, shares }) {
       ></video>
       {/* <img src={url} alt="bilal" width="100%" height="100%" /> */}
       <VideoFooter channel={channel} description={description} song={song} />
-      <VideoSidebar likes={likes} messages={messages} shares={shares} />
+      <VideoSidebar
+        likes={likes}
+        messages={messages}
+        shares={shares}
+        className="likeo"
+      />
     </div>
   );
 }
